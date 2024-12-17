@@ -1,0 +1,160 @@
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --Font-size: 14px;
+    --Family-Montserrat: "Montserrat", sans-serif;
+    --Montserrat-500: 500;
+    --Montserrat-700: 700;
+    --Fraunces: "Fraunces", serif;
+    --Fraunces-500: 500;
+}
+
+main {
+    background-color: var(--Cream);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img:first-child {
+    float: left;
+    width: 250px;
+    height: 380px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+img:last-child {
+    display: none;
+}
+
+section:last-of-type {
+    background-color: var(--White);
+    width: 200px;
+    height: 330px;
+    padding: 25px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+p:first-child {
+    font-family: var(--Family-Montserrat);
+    letter-spacing: 5px;
+    font-size: 10px;
+    font-weight: var(--Montserrat-700);
+    margin: 0px;
+    color: var(--Dark-grayish-blue);
+}
+
+h1 {
+    color: var(--Very-dark-blue);
+    font-family: var(--Fraunces);
+    line-height: 1;
+}
+
+p:last-of-type {
+    font-family: var(--Family-Montserrat);
+    color: var(--Dark-grayish-blue);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+h2 {
+    color: var(--dark-cyan);
+    font-family: var(--Fraunces);
+    font-weight: bold;
+}
+
+span {
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+    font-size: 10px;
+    padding: 0px 0px 10px 15px;
+}
+
+button {
+    background-color: var(--dark-cyan);
+    border: 0px;
+    width: 200px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+} 
+
+button:hover {
+    background-color: rgb(56, 110, 92);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(77, 151, 127);
+}
+
+
+
+@media (max-width: 430px) {
+    main {
+        width: 100%;
+        height: 100vh;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    img:first-child {
+        display: none;
+    }
+
+    img:last-child {
+        display: flex;
+        width: 350px;
+        height: 200px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    section:last-of-type {
+            width: 300px;
+            height: 370px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+    }
+
+    p:last-of-type {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 300px;
+        padding: 30px 0px;
+    }
+}
